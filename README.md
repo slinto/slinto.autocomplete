@@ -18,7 +18,7 @@ For live preview go to [autocomplete page](http://autocomplete.slinto.sk/).
 `$ bower install slinto.autocomplete`
 
 **Optional**  
-[Download latest release](#todo)
+[Download latest release](https://raw.githubusercontent.com/slinto/slinto.autocomplete/master/build/slinto.autocomplete-latest.js)
 
 ## Usage
 ### Basic usage
