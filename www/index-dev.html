@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>slinto.autocomplete() - search plugin written in Google Closure Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+</head>
+<body>
+  <div class="links">
+    <a href="#" class="links__item"><img src="assets/img/icon-github.png">Project on GitHub</a>
+    <a href="#" class="links__item"><img src="assets/img/icon-download.png">Download latest build</a>
+  </div>
+
+  <h1>slinto.autocomplete()</h1>
+  <h2>search plugin written in Google Closure Tools</h2>
+  <h3><strong>Super-fast</strong><br>
+    <span>(average time in 23 records is 1ms /jquery has 200ms ouch!)</span><br>
+    <span>(average time in approx. 1000 records / 3 JSON files is 5ms)</span>,<br>
+    <strong>lightweight 15kB</strong> <span>(6kB Gzipped)</span>,<br>
+    no dependencies,<br>
+    simple as shit</h3>
+
+  <div id="main-wrapper">
+      <label>TRY ME</label>
+      <input type="text" id="search">
+  </div>
+
+  <p class="footer">
+    © 2014 <a href="http://slinto.sk">Slinto</a><br>
+    MS is milliseconds, not Microsoft :)
+  </p>
+
+  <script src="assets/bower_components/closure-library/closure/goog/base.js"></script>
+  <script src="assets/app-deps.js"></script>
+  <script>
+      goog.require('slinto.autocomplete');
+  </script>
+  <script>
+    slinto.autocomplete.init({
+      wrapper: "main-wrapper",
+      files: ["assets/data/fruits.json", "assets/data/vegetables.json"],
+      headings: ["Fruits", "Vegetables"],
+      resultWrapper: "ul#result-wrapper",
+      input: "input#search",
+      numberOfRecords: 4,
+      scan: ["value"],
+      events: {
+        open: function() {
+          console.log('Open event triggered!');
+        },
+        close: function() {
+          console.log('Close event triggered!');
+        },
+        select: function(url, name){
+          console.log("Select event triggered!\n Nazov podniku: " + name + "\n url:" + url);
+        }
+      }
+    });
+  </script>
+  <script src="http://localhost:35729/livereload.js"></script>
+
+
+</body>
+</html>

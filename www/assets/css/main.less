@@ -1,0 +1,235 @@
+/**
+ * MAIN LESS FILES IMPORT PLACE
+ */
+
+// LESSHAT
+@import "lesshat.less";
+
+body,
+html{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: #3498db;
+  color: #FFF;
+  padding-bottom: 30px;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 700;
+  line-height: 40px;
+
+  @media(max-width: 568px){
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  @media(max-width: 385px){
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media(max-width: 280px){
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+h2, h3{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  @media(max-width: 568px){
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  @media(max-width: 280px){
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+h3{
+  font-size: 16px;
+  line-height: 23px;
+
+  span{
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+#main-wrapper{
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+
+  @media(max-width: 700px){
+    width: 80%
+  }
+
+  @media(max-width: 568px){
+    margin-top: 30px;
+  }
+
+  @media(max-width: 385px){
+    margin-top: 0px;
+  }
+
+  label{
+    position: relative;
+    font-size: 55px;
+    line-height: 46px;
+    display: block;
+    text-align: center;
+    color: #62b5e4;
+
+    @media(max-width: 385px){
+      font-size: 40px;
+    }
+
+    @media(max-width: 280px){
+      font-size: 30px;
+    }
+
+    &:after{
+      content: 'Try to search for fruit and vegetables';
+      display: block;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+}
+
+#search{
+  height: 50px;
+  width: 100%;
+  font-size: 25px;
+  padding: 0 10px;
+  margin: 0;
+  margin-top: 5px;
+  .box-sizing(border-box);
+  outline: none;
+  border: none;
+  background: #62b5e4;
+  color: #18445d;
+  .transition(background 300ms);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300px;
+  &:focus{
+    background: #85caf2;
+  }
+}
+
+#result-wrapper{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  font-size: 17px;
+  line-height: 40px;
+  text-align: left;
+  .box-sizing(border-box);
+
+  .heading{
+    background: #62b5e4;
+    color: #18445d;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
+  li{
+    padding: 0 10px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+
+    &:last-child{
+      border: none;
+    }
+
+    &:hover, &.active{
+      cursor: pointer;
+      background: #62b5e4;
+      color: #18445d;
+    }
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  font-size: 10px;
+  text-align: right;
+
+  a{
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.links{
+  margin: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  line-height: 22px;
+  font-size: 13px;
+  color: #276893;
+
+  .links__item{
+    display: inline-block;
+    color: #276893;
+    text-decoration: none;
+
+    margin: 0 20px;
+    .transition(opacity 100ms ease-in);
+
+    img{
+      float: left;
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+    }
+  }
+
+  a.links__item:hover{
+    opacity: .8;
+  }
+}
+
+.slinto-autocomplete-show{
+  display: block;
+}
+
+.slinto-autocomplete-hide{
+  display: none;
+}

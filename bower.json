@@ -1,0 +1,21 @@
+{
+  "name": "slinto-autocomplete",
+  "version": "0.1.0",
+  "description": "slinto.autocomplete(): Fast and lightweight search plugin without any dependencies.",
+  "keywords": [
+    "autocomplete",
+    "search",
+    "json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/foo/bar.git"
+  },
+  "main": "build/slinto.autocomplete-latest.js",
+  "devDependencies": {
+    "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip",
+    "closure-library": "https://github.com/google/closure-library.git"
+  },
+  "license": "MIT",
+  "authors": "Tomáš Stankovič /Slinto/ <hello@slinto.sk> (http://slinto.sk)"
+}

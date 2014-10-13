@@ -1,0 +1,82 @@
+[
+  {
+    "url": "nissan-url",
+    "value": "Nissan"
+  },
+  {
+    "url": "ford-url",
+    "value": "Ford"
+  },
+  {
+    "url": "mercedes-url",
+    "value": "Mercedes-Benz"
+  },
+  {
+    "url": "vauxhall-url",
+    "value": "Vauxhall"
+  },
+  {
+    "url": "peugeot-url",
+    "value": "Peugeot"
+  },
+  {
+    "url": "mazda-url",
+    "value": "Mazda"
+  },
+  {
+    "url": "mini-url",
+    "value": "Mini"
+  },
+  {
+    "url": "volkswagen-url",
+    "value": "Volkswagen"
+  },
+  {
+    "url": "seat-url",
+    "value": "Seat"
+  },
+  {
+    "url": "citroen-url",
+    "value": "Citroën"
+  },
+  {
+    "url": "honda-url",
+    "value": "Honda"
+  },
+  {
+    "url": "citroen-url",
+    "value": "Citroën"
+  },
+  {
+    "url": "bmw-url",
+    "value": "BMW"
+  },
+  {
+    "url": "jaguar-url",
+    "value": "Jaguar"
+  },
+  {
+    "url": "toyota-url",
+    "value": "Toyota"
+  },
+  {
+    "url": "audi-url",
+    "value": "Audi"
+  },
+  {
+    "url": "porsche-url",
+    "value": "Porsche"
+  },
+  {
+    "url": "maserati-url",
+    "value": "Maserati"
+  },
+  {
+    "url": "tesla-url",
+    "value": "Tesla"
+  },
+  {
+    "url": "skoda-url",
+    "value": "Škoda"
+  }
+]
